@@ -5,23 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--========== UNICONS ==========-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--========== BOXICONS ==========-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--========== SWIPER CSS ==========-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--========== MAIN CSS ==========-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>M455YN - Mateusz Afelt</title>
+    <title>M455YN — Mateusz Afelt</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <meta name="description" content="Portfolio Mateusza Afelta, programisty i twórcy gier, znanego jako M455YN. Przykłady projektów, doświadczenie w T-SQL, C#, AI, tworzenie gier.">
+    <meta name="description" content="Portfolio Mateusza Afelta, programisty i twórcy gier, znanego jako M455YN. Przykłady projektów, doświadczenie w T-SQL, C#, AI, tworzenie gier." data-i18n-meta="meta.indexDesc">
     <meta name="keywords" content="Mateusz Afelt, M455YN, portfolio, programista, T-SQL, C#, gry, programowanie">
-    <meta property="og:title" content="Mateusz Afelt - Portfolio | M455YN">
+    <meta property="og:title" content="Mateusz Afelt — Portfolio | M455YN">
     <meta property="og:description" content="Przykłady projektów i doświadczenie Mateusza Afelta, programisty i twórcy gier.">
     <meta property="og:url" content="https://m455yn.dev">
     <script type="application/ld+json">
@@ -45,6 +36,10 @@
 </head>
 
 <body>
+    <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn is-active" data-lang="pl">PL</button>
+        <button type="button" class="lang-switch__btn" data-lang="en">EN</button>
+    </div>
     <!--========== SIDEBAR ==========-->
     <div class="nav__toggle" id="nav-toggle">
         <i class="uil uil-bars"></i>
@@ -59,16 +54,16 @@
                 <div class="menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Dom</a>
+                            <a href="#home" class="nav__link active-link" data-i18n="nav.home">Dom</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">O mnie</a>
+                            <a href="#about" class="nav__link" data-i18n="nav.about">O mnie</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">Portfolio</a>
+                            <a href="#work" class="nav__link" data-i18n="nav.work">Portfolio</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">Doświadczenie</a>
+                            <a href="career.html" class="nav__link" data-i18n="nav.career">Kariera</a>
                         </li>
                     </ul>
                 </div>
@@ -90,29 +85,38 @@
         <section class="home" id="home">
             <div class="home__container container grid">
                 <div class="home__social">
-                    <span class="home__social-follow">Zaobserwuj</span>
+                    <span class="home__social-follow">Connect</span>
                     <div class="home__social-links">
-                        <a href="https://www.linkedin.com/in/m455yn/" target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/m455yn/" target="_blank" class="home__social-link" aria-label="LinkedIn">
                             <i class="uil uil-linkedin"></i>
                         </a>
-                        <a href="https://github.com/M455YN" target="_blank" class="home__social-link">
+                        <a href="https://github.com/M455YN" target="_blank" class="home__social-link" aria-label="GitHub">
                             <i class="uil uil-github"></i>
                         </a>
                     </div>
                 </div>
 
-                <img src="assets/img/home-img.webp" alt="" class="home__img">
-
                 <div class="home__data">
-                    <h1 class="home__title">Hej, Jestem Mateusz Afelt</h1>
-                    <h3 class="home__subtitle">Programista w KDR Solutions Sp. z o.o.</h3>
-                    <p class="home__description"></p>
+                    <h1 class="home__brand">M455YN</h1>
+                    <h2 class="home__title">Mateusz Afelt</h2>
+                    <p class="home__subtitle">// backend · .NET · SQL</p>
+                    <blockquote class="home__quote">
+                        <p>Real Programmers use Fortran. Quiche Eaters use Pascal.</p>
+                        <cite>— Ed Post, Tektronix, Inc.</cite>
+                    </blockquote>
+                    <div class="home__actions">
+                        <a href="#work" class="button"><span data-i18n="home.cta">Zobacz projekty</span> <i class="uil uil-arrow-right button__icon"></i></a>
+                    </div>
+                </div>
+
+                <div class="home__visual">
+                    <div class="home__ring" aria-hidden="true"></div>
+                    <img src="assets/img/profile.webp" alt="M455YN — stylizowany portret" class="home__img" width="380" height="380">
                 </div>
 
                 <div class="my__info">
                     <div class="info__item">
                         <i class="uil uil-github info__icon"></i>
-
                         <div>
                             <h3 class="info__title">Github</h3>
                             <span class="info__subtitle">m455yn</span>
@@ -121,7 +125,6 @@
 
                     <div class="info__item">
                         <i class="uil uil-linkedin info__icon"></i>
-
                         <div>
                             <h3 class="info__title">Linkedin</h3>
                             <span class="info__subtitle">m455yn</span>
@@ -130,7 +133,6 @@
 
                     <div class="info__item">
                         <i class="uil uil-envelope-edit info__icon"></i>
-
                         <div>
                             <h3 class="info__title">Email</h3>
                             <span class="info__subtitle">m455yn@outlook.com</span>
@@ -142,98 +144,41 @@
 
         <!--===== About =====-->
         <section class="about section" id="about">
-            <h2 data-heading="Intro" class="section__title">O mnie</h2>
+            <h2 data-heading="// 01 — about" class="section__title container reveal" data-i18n="about.heading" data-i18n-heading="about.headingAttr">O mnie</h2>
 
-            <div class="about__container container grid">
-                <img src="assets/img/about-img.webp" alt="" class="about__img">
+            <div class="about__container container grid reveal">
+                <img src="assets/img/about-img.webp" alt="Mateusz Afelt" class="about__img">
 
                 <div class="about__data">
-                    <h3 class="about__heading">Hej, Jestem Mateusz Afelt</h3>
-                    <p class="about__description">M455YN, pasjonat tworzenia gier 2D oraz programowania z wykorzystaniem technologii takich jak Unity i .NET.</p>
+                    <p class="about__eyebrow">Informatics Engineer · B.Eng.</p>
+                    <h3 class="about__heading">Backend Development</h3>
+                    <ul class="about__stack">
+                        <li>ASP.NET</li>
+                        <li>T-SQL</li>
+                        <li>C#</li>
+                        <li>.NET</li>
+                    </ul>
                     <div class="about__info grid">
                         <div class="about__box">
                             <i class="uil uil-award about__icon"></i>
-                            <h3 class="about__title">Doświadczenie</h3>
-                            <span class="about__subtitle">2 + lata</span>
+                            <div>
+                                <h3 class="about__title" data-i18n="about.exp">Doświadczenie</h3>
+                                <span class="about__subtitle" data-i18n="about.expVal">4+ lata</span>
+                            </div>
                         </div>
 
                         <div class="about__box">
                             <i class="uil uil-suitcase-alt about__icon"></i>
-                            <h3 class="about__title">Ukończono</h3>
-                            <span class="about__subtitle">8 + projektów</span>
-                        </div>
-
-                    </div>
-                    <a href="mailto:m455yn@outlook.com" class="button"><i class="uil uil-navigator button__icon"></i>
-                        Kontakt ze mną
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!--===== Qualification =====-->
-        <section class="qualification section">
-            <h2 data-heading="Moje Kwalifikacje" class="section__title">Kariera</h2>
-
-            <div class="qualification__container container grid">
-                <div class="experience">
-                    <h3 class="qualification__title">
-                        <i class="uil uil-suitcase"></i> Doświadczenie
-                    </h3>
-
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">KDR Solutions Sp. z o.o.</h3>
-                            <p class="timeline__text">Programista</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                                2024 - Obecnie
-                            </span>
-                        </div>
-
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">KDR Solutions Sp. z o.o.</h3>
-                            <p class="timeline__text">Młodszy Programista</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                                2022 - 2024
-                            </span>
-                        </div>
-
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">BluSoft Sp. z o.o.</h3>
-                            <p class="timeline__text">Praktyki</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                                Marzec 2020
-                            </span>
+                            <div>
+                                <h3 class="about__title" data-i18n="about.done">Ukończono</h3>
+                                <span class="about__subtitle" data-i18n="about.doneVal">10+ projektów</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="education">
-                    <h3 class="qualification__title">
-                        <i class="uil uil-graduation-cap"></i> Wykształcenie
-                    </h3>
-
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">Uniwersytet Kazimierza Wielkiego w Bydgoszczy</h3>
-                            <p class="timeline__text">Inżynierskie, Moduł: sieci i systemy rozproszone</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                                2021 - 2025
-                            </span>
-                        </div>
-
-                        <div class="timeline__item">
-                            <div class="circle__dot"></div>
-                            <h3 class="timeline__title">Zespół Szkół Mechanicznych nr 1 im. Franciszka Siemiradzkiego</h3>
-                            <p class="timeline__text">Technik informatyk</p>
-                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
-                                2017 - 2020
-                            </span>
-                        </div>
+                    <div class="home__actions">
+                        <a href="career.html" class="button"><i class="uil uil-briefcase-alt button__icon"></i>
+                            <span data-i18n="about.cta">Kariera & stack</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -241,120 +186,172 @@
 
         <!--===== Work =====-->
         <section class="work section" id="work">
-            <h2 data-heading="Portfolio" class="section__title">Moje projekty</h2>
+            <h2 data-heading="// 02 — portfolio" class="section__title container reveal" data-i18n="work.heading" data-i18n-heading="work.headingAttr">Projekty</h2>
 
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">Wszystko</span>
-                <span class="work__item" data-filter=".game">Gry</span>
-                <span class="work__item" data-filter=".app">Narzędzia i Programy</span>
-                <span class="work__item" data-filter=".design">WWW</span>
+            <div class="work__filters container reveal">
+                <span class="work__item active-work" data-filter="all" data-i18n="work.all">Wszystko</span>
+                <span class="work__item" data-filter=".game" data-i18n="work.games">Gry</span>
+                <span class="work__item" data-filter=".app" data-i18n="work.tools">Narzędzia</span>
+                <span class="work__item" data-filter=".design" data-i18n="work.web">WWW</span>
             </div>
 
-            <div class="work__container container grid">
+            <div class="work__container container grid reveal">
                 <div class="work__card mix game">
-                    <img src="assets/img/turboninja2d.webp" alt="" class="work__img">
-                    <h3 class="work__title">Turbo Ninja 2D</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/turboninja2d.webp" alt="Turbo Ninja 2D" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">Turbo Ninja 2D</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Dynamiczna gra platformowa.</h3>
-                        <p class="details__description">Twoim zadaniem jest zostać potężnym ninją i pokonać mistrza ninja Żeralta z Piwii!</p>
+                        <h3 class="details__title" data-i18n="proj.ninja.title">Dynamiczna gra platformowa.</h3>
+                        <p class="details__description" data-i18n="proj.ninja.desc">Twoim zadaniem jest zostać potężnym ninją i pokonać mistrza ninja Żeralta z Piwii!</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2023.07.04</span></li>
-                            <li>Technologie - <span>C#</span></li>
-                            <li>Role - <span>game developer</span></li>
-                            <li>WWW - <span><a href="https://github.com/M455YN/Turbo-Ninja-2D">Github</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2023.07.04</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>C#</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>game developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://github.com/M455YN/Turbo-Ninja-2D">Github</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix game">
-                    <img src="assets/img/castleline-evil.webp" alt="" class="work__img">
-                    <h3 class="work__title">Castleline Evil</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/castleline-evil.webp" alt="Castleline Evil" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">Castleline Evil</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Eksploracja zamku opanowanego przez potwory.</h3>
-                        <p class="details__description">Gra osadzona w roku 1999, w której musisz pokonać hordy wroga i odkryć tajemnice zamku.</p>
+                        <h3 class="details__title" data-i18n="proj.castle.title">Eksploracja zamku opanowanego przez potwory.</h3>
+                        <p class="details__description" data-i18n="proj.castle.desc">Gra osadzona w roku 1999, w której musisz pokonać hordy wroga i odkryć tajemnice zamku.</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2021.10.31</span></li>
-                            <li>Technologie - <span>C#</span></li>
-                            <li>Role - <span>game developer</span></li>
-                            <li>WWW - <span><a href="https://github.com/M455YN/Castleline-Evil">Github</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2021.10.31</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>C#</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>game developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://github.com/M455YN/Castleline-Evil">Github</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="assets/img/microsoft-entra.webp" alt="" class="work__img">
-                    <h3 class="work__title">Microsoft Entra OneDrive Downloader</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/microsoft-entra.webp" alt="Microsoft Entra OneDrive Downloader" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">Microsoft Entra OneDrive Downloader</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Aplikacja .NET do zarządzania Azure Blob Storage.</h3>
-                        <p class="details__description">Program .NET do obsługi Microsoft Azure Blob Storage z autoryzacją OAuth 2.0.</p>
+                        <h3 class="details__title" data-i18n="proj.entra.title">Aplikacja .NET do zarządzania Azure Blob Storage.</h3>
+                        <p class="details__description" data-i18n="proj.entra.desc">Program .NET do obsługi Microsoft Azure Blob Storage z autoryzacją OAuth 2.0.</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2024.12.16</span></li>
-                            <li>Technologie - <span>C#</span></li>
-                            <li>Role - <span>backend developer</span></li>
-                            <li>WWW - <span><a href="https://github.com/M455YN/MicrosoftEntraOneDriveDownloader">Github</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2024.12.16</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>C#</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>backend developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://github.com/M455YN/MicrosoftEntraOneDriveDownloader">Github</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix app">
-                    <img src="assets/img/sgsclient.webp" alt="" class="work__img">
-                    <h3 class="work__title">SGSClient</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/swiftfind.webp" alt="SwiftFind" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">SwiftFind</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Launcher do gier studia SzyrGameStudio.</h3>
-                        <p class="details__description">Aplikacja umożliwiająca zarządzanie i uruchamianie gier z jednego miejsca.</p>
+                        <h3 class="details__title" data-i18n="proj.swift.title">Szybkie, zunifikowane wyszukiwanie w VS Code.</h3>
+                        <p class="details__description" data-i18n="proj.swift.desc">Rozszerzenie inspirowane JetBrains — zakładki Files / Folders / Text / Symbols / Commands, filtry (regex, fuzzy, gitignore) i ripgrep pod spodem.</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2024.11.23</span></li>
-                            <li>Technologie - <span>C#</span></li>
-                            <li>Role - <span>backend developer</span></li>
-                            <li>WWW - <span><a href="https://github.com/szyrgamestudio/SGSClient">Github</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2026.05</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>TypeScript · VS Code API</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>extension developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://marketplace.visualstudio.com/items?itemName=M455YN.swift-find">Marketplace</a> · <a href="https://open-vsx.org/extension/M455YN/swift-find">Open VSX</a> · <a href="https://github.com/M455YN/swiftfind">Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="assets/img/projects/csharp-razor-taghelpers.webp" alt="C# Razor Tag Helper Support" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">C# Razor Tag Helper Support</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title" data-i18n="proj.razor.title">IntelliSense dla custom Tag Helpers w Razor.</h3>
+                        <p class="details__description" data-i18n="proj.razor.desc">Rozszerzenie VS Code skanujące projekty C# — wykrywa Tag Helpery, podpowiada tagi i atrybuty w .cshtml/.razor oraz pokazuje dokumentację XML na hover.</p>
+                        <ul class="details__info">
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2026.05</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>TypeScript · C# · Razor</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>extension developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://marketplace.visualstudio.com/items?itemName=M455YN.csharp-razor-taghelpers">Marketplace</a> · <a href="https://open-vsx.org/extension/M455YN/csharp-razor-taghelpers">Open VSX</a> · <a href="https://github.com/M455YN/csharp-razor-taghelpers">Github</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="assets/img/projects/sgsclient.webp" alt="SGSClient" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">SGSClient</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title" data-i18n="proj.sgs.title">Launcher do gier studia SzyrGameStudio.</h3>
+                        <p class="details__description" data-i18n="proj.sgs.desc">Aplikacja umożliwiająca zarządzanie i uruchamianie gier z jednego miejsca.</p>
+                        <ul class="details__info">
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2024.11.23</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>C#</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>backend developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://github.com/szyrgamestudio/SGSClient">Github</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="assets/img/m455yn-dev.webp" alt="" class="work__img">
-                    <h3 class="work__title">m455yn.github.io</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/m455yn-dev.webp" alt="m455yn.dev" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">m455yn.dev</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Personalna strona portfolio.</h3>
-                        <p class="details__description">Strona internetowa użytkownika M455YN, prezentująca projekty i portfolio.</p>
+                        <h3 class="details__title" data-i18n="proj.site.title">Personalna strona portfolio.</h3>
+                        <p class="details__description" data-i18n="proj.site.desc">Strona internetowa użytkownika M455YN, prezentująca projekty i portfolio.</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2024.12.16</span></li>
-                            <li>Technologie - <span>CSS</span></li>
-                            <li>Role - <span>frontend developer</span></li>
-                            <li>WWW - <span><a href="https://m455yn.github.io/">Live</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2024.12.16</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>CSS</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>frontend developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://m455yn.dev/">Live</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="work__card mix design">
-                    <img src="assets/img/sgswww.webp" alt="" class="work__img">
-                    <h3 class="work__title">Strona SzyrGameStudio</h3>
-                    <span class="work__button">Więcej
-                        <i class="uil uil-arrow-right work__button-icon"></i>
-                    </span>
+                    <img src="assets/img/projects/sgswww.webp" alt="Strona SzyrGameStudio" class="work__img">
+                    <div class="work__meta">
+                        <h3 class="work__title">Strona SzyrGameStudio</h3>
+                        <span class="work__button"><span data-i18n="work.more">Więcej</span>
+                            <i class="uil uil-arrow-right work__button-icon"></i>
+                        </span>
+                    </div>
                     <div class="portfolio__item-details">
-                        <h3 class="details__title">Oficjalna strona studia SzyrGameStudio.</h3>
-                        <p class="details__description">Prezentacja gier i projektów realizowanych przez studio.</p>
+                        <h3 class="details__title" data-i18n="proj.sgswww.title">Oficjalna strona studia SzyrGameStudio.</h3>
+                        <p class="details__description" data-i18n="proj.sgswww.desc">Prezentacja gier i projektów realizowanych przez studio.</p>
                         <ul class="details__info">
-                            <li>Utworzono - <span>2024.01.24</span></li>
-                            <li>Technologie - <span>CSS</span></li>
-                            <li>Role - <span>frontend developer</span></li>
-                            <li>WWW - <span><a href="https://szyrgamestudio.github.io/">Live</a></span></li>
+                            <li><span data-i18n="work.created">Utworzono —</span> <span>2024.01.24</span></li>
+                            <li><span data-i18n="work.tech">Technologie —</span> <span>CSS</span></li>
+                            <li><span data-i18n="work.role">Role —</span> <span>frontend developer</span></li>
+                            <li><span data-i18n="work.www">WWW —</span> <span><a href="https://szyrgamestudio.github.io/">Live</a></span></li>
                         </ul>
                     </div>
                 </div>
@@ -367,19 +364,19 @@
                 <div class="portfolio__popup-content grid">
                     <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
                     <div class="pp__thumbnail">
-                        <img src="assets/img/work-2.webp" alt="" class="portfolio__popup-img">
+                        <img src="assets/img/projects/turboninja2d.webp" alt="" class="portfolio__popup-img">
                     </div>
                     <div class="portfolio__popup-info">
-                        <div class="portfolio__popup-subtitle">Wyróżnione - <span>Design</span></div>
+                        <div class="portfolio__popup-subtitle"><span data-i18n="work.popupPrefix">Projekt —</span> <span>Design</span></div>
                         <div class="portfolio__popup-body">
                             <h3 class="details__title">App for Lorem ipsum</h3>
                             <p class="details__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                                 Earum impedit voluptatibus minima.</p>
                             <ul class="details__info">
-                                <li>Created - <span>2024.12.25</span></li>
-                                <li>Technologies - <span>html css</span></li>
-                                <li>Role - <span>frontend</span></li>
-                                <li>View - <span><a href="#">www.domain.com</a></span></li>
+                                <li>Created — <span>2024.12.25</span></li>
+                                <li>Technologies — <span>html css</span></li>
+                                <li>Role — <span>frontend</span></li>
+                                <li>View — <span><a href="#">www.domain.com</a></span></li>
                             </ul>
                         </div>
                     </div>
@@ -387,129 +384,6 @@
             </div>
         </div>
 
-        <!--===== Services =====-->
-        
-
-        <section class="skills section" id="skills">
-            <h2 data-heading="Umiejętności" class="section__title">Profil kompetencji</h2>
-
-            <div class="skills__container container grid">
-                <div class="skills__tabs">
-                    <div class="skills__header skills__active" data-target="#backend">
-                        <i class="uil uil-server-network skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Backend developer</h1>
-                            <span class="skills__subtitle">Ponad 3 lata</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__header" data-target="#frontend">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
-
-                        <div>
-                            <h1 class="skills__title">Frontend developer</h1>
-                            <span class="skills__subtitle">Ponad 2 lata</span>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-
-                </div>
-
-                <div class="skills__content">
-                    <div class="skills__group skills__active" data-content id="backend">
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Transact-SQL</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MSSQL</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 90%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">C#</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
-                                    <span class="skills__number">30%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 30%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__group" data-content id="frontend">
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">80%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 60%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__number">40%</span>
-                                </div>
-
-                                <div class="skills__bar">
-                                    <span class="skills__percentage" style="width: 40%;"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <div class="footer__bg">
@@ -521,41 +395,38 @@
 
                     <ul class="footer__links">
                         <li>
-                            <a href="#about" class="footer__link">O mnie</a>
+                            <a href="#about" class="footer__link" data-i18n="footer.about">O mnie</a>
                         </li>
                         <li>
-                            <a href="#work" class="footer__link">Portfolio</a>
+                            <a href="#work" class="footer__link" data-i18n="footer.work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="career.html" class="footer__link" data-i18n="footer.career">Kariera</a>
                         </li>
                     </ul>
 
                     <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/m455yn/" target="_blank" class="footer__social">
+                        <a href="https://www.linkedin.com/in/m455yn/" target="_blank" class="footer__social" aria-label="LinkedIn">
                             <i class="uil uil-linkedin"></i>
                         </a>
-                        <a href="https://github.com/M455YN" target="_blank" class="footer__social">
+                        <a href="https://github.com/M455YN" target="_blank" class="footer__social" aria-label="GitHub">
                             <i class="uil uil-github"></i>
                         </a>
                     </div>
                 </div>
 
-                <p class="footer__copy">&#169; M455YN. All right reserved</p>
+                <p class="footer__copy">© M455YN — all rights reserved</p>
             </div>
         </footer>
     </main>
 
     <!--========== SCROLL UP ==========-->
-
     <a href="#" class="scrollup" id="scroll-up">
-        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+        <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-    <!--========== MIXITUP FILTER ==========-->
-    <script src="assets/js/mixitup.min.js"></script>
-
-    <!--========== SWIPER JS ==========-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--========== MAIN JS ==========-->
+    <script src="assets/js/vendor/mixitup.min.js"></script>
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
